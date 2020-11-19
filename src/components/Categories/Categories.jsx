@@ -46,7 +46,7 @@ const Categories = (props) => {
           {props.items.map((pars, index) => (
             <li
               className={activeItem === index ? 'active' : ''}
-              onClick={() => setActiveItem(index)}
+              onClick={() => onSelectItem(index)}
               key={index}>
               {pars}
             </li>
